@@ -5,11 +5,11 @@ class Actor < ActiveRecord::Base
 
   def full_name
     puts "#{first_name} + #{last_name}"
-  end 
+  end
 
   def list_roles
     self.characters do |character|
       puts "character"
     end
-  end 
+  end
 end
