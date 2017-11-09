@@ -1,5 +1,5 @@
-class AddCatchPhraseToCharactersModel < ActiveRecord::Migration
+class AddCatchphraseToCharactersModel < ActiveRecord::Migration
   def change
     add_column :characters, :catch_phrase, :string
-  end 
+  end
 end
