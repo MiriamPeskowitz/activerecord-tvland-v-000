@@ -3,4 +3,13 @@ class Actor < ActiveRecord::Base
   has_many :characters
   has_many :shows, through: :characters
 
+  def full_name
+    puts "#{first_name} + #{last_name}"
+  end 
+
+  def list_roles
+    self.characters do |character|
+      puts "character"
+    end
+  end 
 end
